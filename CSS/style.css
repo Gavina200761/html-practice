@@ -52,3 +52,20 @@ body {
   border: 1px solid black; 
   padding: 10px;
 }
+
+#other_artists ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+#song_album_wrap {
+  display: flex;
+  gap: 20px;
+}
+
+#my_favs, #best_albums {
+  flex: 1;
+}
