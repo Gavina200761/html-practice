@@ -69,3 +69,9 @@ body {
 #my_favs, #best_albums {
   flex: 1;
 }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+}
