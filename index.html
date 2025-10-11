@@ -5,50 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Music Page</title>
+    <!--Link to Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!--Link to CSS page-->
     <link rel="stylesheet" href="./CSS/style.css" />
 </head>
 
 <body>
-    <header id="main_header">
-        <h1>My Music Page</h1>
-        <p>This is a page all about the music and artists that I like!</p>
-    </header>
-    <main id="main_page">
-        <article id="AK_RHCP">
-            <h3>Anthony Keidis</h3>
-            <p>Anthony Kiedis is the lead singer and one of the founders of the Red Hot Chili Peppers.</p>
-            <img src="img/AK.webp" alt="An image of Anthony Kiedis" width="50%">
-            <div id="song_album_wrap">
-                <section id="my_favs">
-                    <p class="subheader">Favorite Songs</p>
-                    <ul>
-                        <li>This Velvet Glove</li>
-                        <li>Parallel Universe</li>
-                        <li>Aquatic Mouth Dance</li>
-                    </ul>
-                </section>
-                <section id="best_albums">
-                    <p class="subheader">Best Albums</p>
-                    <ol>
-                        <li>Californication</li>
-                        <li>Unlimited Love</li>
-                        <li>I'm With You</li>
-                    </ol>
-                </section>
-            </div>
-            <p class="button">Learn more about
-                <a href="https://en.wikipedia.org/wiki/Anthony_Kiedis">Anthony Kiedis</a> here!
-            </p>
-        </article>
-        <nav id="other_artists">
-            <h4>See my other favorite artists!</h4>
-            <ul>
-                <li><a href="./Jay-Z.html">Jay-Z</a></li>
-                <li><a href="./ASAP.html">ASAP Rocky</a></li>
-            </ul>
-        </nav>
-    </main>
+    <div class="container mt-4">
+        <header class="text-center mb-4">
+            <h1>My Music Page</h1>
+            <p class-="lead">This is a page all about the music and artists that I like!</p>
+        </header>
+        <main id="main_page">
+            <article id="AK_RHCP">
+                <h3>Anthony Keidis</h3>
+                <p>Anthony Kiedis is the lead singer and one of the founders of the Red Hot Chili Peppers.</p>
+                <img src="img/AK.webp" alt="An image of Anthony Kiedis" width="50%">
+                <div class="row">
+                    <section class="col-md-6 mb-4">
+                        <h3>Favorite Songs</h3>
+                        <ul>
+                            <li>This Velvet Glove</li>
+                            <li>Parallel Universe</li>
+                            <li>Aquatic Mouth Dance</li>
+                        </ul>
+                    </section>
+                    <section class="col-md-6 mb-4">
+                        <h3>Best Albums</h3>
+                        <ol>
+                            <li>Californication</li>
+                            <li>Unlimited Love</li>
+                            <li>I'm With You</li>
+                        </ol>
+                    </section>
+                </div>
+                <p class="text-center">
+                    <a href="https://en.wikipedia.org/wiki/Anthony_Kiedis" class="btn btn-primary">Learn more about
+                        Anthony Kiedis</a>
+                </p>
+            </article>
+            <footer class="mt-5">
+                <nav class="d-flex justify-content-center gap-4">
+                    <a href="./Jay-Z.html" class="btn btn-success">Jay-Z</a>
+                    <a href="./ASAP.html" class="btn btn-success">A$AP Rocky</a>
+                </nav>
+            </footer>
+        </main>
+    </div>
 </body>
 
 </html>
